@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PcG-l6-33T">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Medicine-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Medicine" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,10 +22,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7c-bP-RbD" customClass="CustomButton" customModule="Medicine" customModuleProvider="target">
-                                <rect key="frame" x="148" y="536" width="67" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31953438983273463" green="0.61514879040978254" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7c-bP-RbD" customClass="CustomButton" customModule="Medicine" customModuleProvider="target">
+                                <rect key="frame" x="154" y="498" width="67" height="67"/>
+                                <color key="backgroundColor" red="0.062557351178617493" green="0.73843524320338405" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="ZIt-t0-fHJ"/>
+                                    <constraint firstAttribute="height" constant="67" id="i5U-k7-X8x"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.98162905978770409" green="0.99754173740141072" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,13 +42,76 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-1c-TMe">
+                                <rect key="frame" x="43" y="72" width="289" height="279"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="279" id="chj-gx-rhQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZNS-OW-A3S">
+                                <rect key="frame" x="43" y="414" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-mT-Y7c">
+                                <rect key="frame" x="286" y="414" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oug-mT-Y7c" firstAttribute="baseline" secondItem="ZNS-OW-A3S" secondAttribute="baseline" id="5hn-Cs-uhO"/>
+                            <constraint firstItem="ZNS-OW-A3S" firstAttribute="leading" secondItem="Ocd-1c-TMe" secondAttribute="leading" id="CLe-l8-sM4"/>
+                            <constraint firstItem="Ocd-1c-TMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="bDT-zN-mZX"/>
+                            <constraint firstItem="ZNS-OW-A3S" firstAttribute="top" secondItem="Ocd-1c-TMe" secondAttribute="bottom" constant="63" id="c44-gW-UjL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D7c-bP-RbD" secondAttribute="bottom" constant="53" id="ep0-1b-ipe"/>
+                            <constraint firstItem="Ocd-1c-TMe" firstAttribute="centerX" secondItem="D7c-bP-RbD" secondAttribute="centerX" id="hIE-9P-1rx"/>
+                            <constraint firstItem="Ocd-1c-TMe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="loJ-EM-rYh"/>
+                            <constraint firstItem="D7c-bP-RbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWR-9E-kd4"/>
+                            <constraint firstItem="Oug-mT-Y7c" firstAttribute="trailing" secondItem="Ocd-1c-TMe" secondAttribute="trailing" id="zVK-J6-eL1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Medicine" id="blc-OW-xTi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2218.4000000000001" y="52.623688155922046"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rjc-AD-Qdv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PcG-l6-33T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6Bi-T3-P3q">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ZrU-5r-7PD" kind="relationship" relationship="viewControllers" id="0zf-ql-eOz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ti-Oc-rzy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146.40000000000001" y="52.623688155922046"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nPo-Rw-ar0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZrU-5r-7PD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" id="c2j-Px-Oed"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eKl-HD-6hz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="j3X-D0-fSg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIs-5v-aWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277.5999999999999" y="52.623688155922046"/>
         </scene>
     </scenes>
 </document>

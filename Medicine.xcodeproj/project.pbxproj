@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D884B1CAFB005FC54AB863B /* Pods_Medicine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCACD9BE6F82E62F6F822C9 /* Pods_Medicine.framework */; };
 		C6D38AE11DE61EFD00C08726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D38AE01DE61EFD00C08726 /* AppDelegate.swift */; };
 		C6D38AE31DE61EFD00C08726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D38AE21DE61EFD00C08726 /* ViewController.swift */; };
 		C6D38AE61DE61EFD00C08726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D38AE41DE61EFD00C08726 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93F2F0C01E8173D9FBFEAF90 /* Pods-Medicine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicine.release.xcconfig"; path = "Pods/Target Support Files/Pods-Medicine/Pods-Medicine.release.xcconfig"; sourceTree = "<group>"; };
+		AFCACD9BE6F82E62F6F822C9 /* Pods_Medicine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medicine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D38ADD1DE61EFD00C08726 /* Medicine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medicine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D38AE01DE61EFD00C08726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D38AE21DE61EFD00C08726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		C6D38B031DE61EFD00C08726 /* MedicineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineUITests.swift; sourceTree = "<group>"; };
 		C6D38B051DE61EFD00C08726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D38B111DE622CD00C08726 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C6F58B551DE63DE300991DD1 /* Medicine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Medicine-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDF03FA4D87A01044D2CEA9A /* Pods_MedicineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2BA65D1F57E0939352C469 /* Pods_MedicineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB498F41FFB11F893E145A80 /* Pods-Medicine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medicine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Medicine/Pods-Medicine.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D884B1CAFB005FC54AB863B /* Pods_Medicine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +86,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8018C4AF13BF2F9C90A03AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB498F41FFB11F893E145A80 /* Pods-Medicine.debug.xcconfig */,
+				93F2F0C01E8173D9FBFEAF90 /* Pods-Medicine.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94E3BD93210BBB62AB479912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCACD9BE6F82E62F6F822C9 /* Pods_Medicine.framework */,
+				DB2BA65D1F57E0939352C469 /* Pods_MedicineTests.framework */,
+				CDF03FA4D87A01044D2CEA9A /* Pods_MedicineUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6D38AD41DE61EFC00C08726 = {
 			isa = PBXGroup;
 			children = (
+				C6F58B551DE63DE300991DD1 /* Medicine-Bridging-Header.h */,
 				C6D38ADF1DE61EFD00C08726 /* Medicine */,
 				C6D38AF71DE61EFD00C08726 /* MedicineTests */,
 				C6D38B021DE61EFD00C08726 /* MedicineUITests */,
 				C6D38ADE1DE61EFD00C08726 /* Products */,
+				8018C4AF13BF2F9C90A03AF6 /* Pods */,
+				94E3BD93210BBB62AB479912 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6D38B081DE61EFD00C08726 /* Build configuration list for PBXNativeTarget "Medicine" */;
 			buildPhases = (
+				F0DBF3B0E167378FAC5B807D /* [CP] Check Pods Manifest.lock */,
 				C6D38AD91DE61EFC00C08726 /* Sources */,
 				C6D38ADA1DE61EFC00C08726 /* Frameworks */,
 				C6D38ADB1DE61EFC00C08726 /* Resources */,
+				C3420285092E7C54C51E9B23 /* [CP] Embed Pods Frameworks */,
+				8A017C16FBBEA32A96FBAFD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +295,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A017C16FBBEA32A96FBAFD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medicine/Pods-Medicine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3420285092E7C54C51E9B23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medicine/Pods-Medicine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DBF3B0E167378FAC5B807D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6D38AD91DE61EFC00C08726 /* Sources */ = {
@@ -421,6 +502,7 @@
 		};
 		C6D38B091DE61EFD00C08726 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB498F41FFB11F893E145A80 /* Pods-Medicine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRR5Q7F2CV;
@@ -434,6 +516,7 @@
 		};
 		C6D38B0A1DE61EFD00C08726 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F2F0C01E8173D9FBFEAF90 /* Pods-Medicine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TRR5Q7F2CV;
@@ -522,6 +605,7 @@
 				C6D38B0A1DE61EFD00C08726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6D38B0B1DE61EFD00C08726 /* Build configuration list for PBXNativeTarget "MedicineTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +614,7 @@
 				C6D38B0D1DE61EFD00C08726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6D38B0E1DE61EFD00C08726 /* Build configuration list for PBXNativeTarget "MedicineUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +623,7 @@
 				C6D38B101DE61EFD00C08726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
